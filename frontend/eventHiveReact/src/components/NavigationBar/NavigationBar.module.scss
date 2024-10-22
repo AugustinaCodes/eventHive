@@ -1,0 +1,26 @@
+@use "../../styles/variables.scss" as vars;
+
+.navBar {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLink {
+    font-family: vars.$navigation-link-font;
+    font-size: vars.$navigation-link-font-size;
+    font-weight: vars.$navigation-link-font-weight;
+    color: vars.$secondary-color;
+    text-decoration: none;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menuIcon {
+    font-size: 50px;
+}
