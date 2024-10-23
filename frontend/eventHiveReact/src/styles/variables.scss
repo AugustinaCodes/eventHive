@@ -4,11 +4,26 @@ $primary-color: #fff;
 $secondary-color: #000;
 $button-hover-color: rgb(244, 243, 243);
 $button-get-started-hover-color: #F1A501;
+$hero-section-color-mobile: #EE242A;
+$button-find-out-more-color: #F1A501;
+$button-find-out-more-hover-color: #e39c02;
+$modal-color: #f9f9f9;
 
 // Typography
 $navigation-link-font: 'Roboto', arial, sans-serif;
 $navigation-link-font-size: 16px;
 $navigation-link-font-weight: 500;
+
+$heading-font: 'Volkhov', arial, sans-serif;
+$heading-font-size: 60px;
+$heading-font-weight: 450;
+
+$paragraph-font: 'Poppins', arial, sans-serif;
+$paragraph-font-size: 25px;
+$paragraph-font-weight: 400;
+
+$button-find-out-more-font: 'Roboto', arial, sans-serif;
+
 
 // Responsive Design Breakpoints
 $breakpoint-desktop: 1100px;
