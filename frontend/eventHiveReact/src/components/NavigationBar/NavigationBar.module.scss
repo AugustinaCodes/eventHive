@@ -63,7 +63,7 @@
     border-radius: 5px;
     border: 1px solid black;
     padding: 5px 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .getStartedButton:hover {
