@@ -13,14 +13,77 @@
     font-weight: vars.$navigation-link-font-weight;
     color: vars.$secondary-color;
     text-decoration: none;
+    transition: background-color 0.3s ease, transfrom 0.3s ease;
+}
+
+.buttonHover {
+    transition: background-color 0.3s ease, transfrom 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+
+.buttonHover:hover {
+    background-color: vars.$button-hover-color;
+    cursor: pointer;
 }
 
 .rightSide {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .menuIcon {
-    font-size: 50px;
+    cursor: pointer;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.desktopNav {
+    display: flex;
+    gap: 20px;
+}
+
+.registerLinks {
+    display: flex;
+    gap: 10px;
+}
+
+.rightSideDesktop {
+    display: flex;
+    gap: 40px;
+}
+
+.getStartedButton {
+    cursor: pointer;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.getStartedButton:hover {
+    color: vars.$primary-color;
+    background-color: vars.$button-get-started-hover-color;
+    border-color: vars.$button-get-started-hover-color;
+    box-shadow: 0px 5px 5px 0 rgb(225, 196, 141);
+}
+
+.mobileSide {
+    display: flex;
+    gap: 20px;
+}
+
+@media (min-width: vars.$breakpoint-desktop)  {
+    .navBar {
+        padding: 30px 60px;
+    }
+
+    .rightSideDesktop {
+        gap: 80px;
+    }
 }
