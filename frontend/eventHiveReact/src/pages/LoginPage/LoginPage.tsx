@@ -9,7 +9,7 @@ export default function LoginPage() {
     const { loginWithRedirect } = useAuth0()
   return (
     <div>
-        <button onClick={() => navigate(-1)}>Back</button>
+        <button onClick={() => navigate("/")}>Back</button>
         <img src={logo} alt="Event Hive Logo" />
         <h1>Sign In</h1>
         <p>To get access to Event Hive</p>
