@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
+import router from "./routes/index.js";
 
 dotenv.config();
 
@@ -14,7 +15,8 @@ mongoose
 
 const app = express();
 
+app.use(express.json());
 app.use(cors());
-// app.use(router)
+app.use(router)
 
 app.listen(PORT, () => console.log(`App listening on PORT: ${PORT}`));
