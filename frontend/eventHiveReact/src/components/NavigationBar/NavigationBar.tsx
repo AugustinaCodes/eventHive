@@ -5,10 +5,12 @@ import styles from "./NavigationBar.module.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useMediaQuery } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function NavigationBar() {
   const [openModal, setOpenModal] = useState(false);
   const isDesktop = useMediaQuery(`(min-width:900px)`);
+  const navigate = useNavigate();
 
   function toggleModal() {
     setOpenModal((prevState) => !prevState);
@@ -46,7 +48,7 @@ export default function NavigationBar() {
               </div>
             </div>
             <div className={styles.registerLinks}>
-              <div className={styles.buttonHover}>
+              <div className={styles.buttonHover} onClick={() => navigate("/login")}>
                 <a href="" className={styles.navLink}>
                   Login
                 </a>
@@ -61,7 +63,7 @@ export default function NavigationBar() {
         )}
         {!isDesktop && (
           <div className={styles.mobileSide}>
-            <div className={styles.buttonHover}>
+            <div className={styles.buttonHover} onClick={() => navigate("/login")}>
               <a href="" className={styles.navLink}>
                 Login
               </a>
